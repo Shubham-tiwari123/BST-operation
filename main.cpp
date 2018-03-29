@@ -7,6 +7,7 @@ int main() {
     b.createBST();
     b.findMin();
     b.printKeyInRange();
+    b.makeTree();
     return 0;
 }
 

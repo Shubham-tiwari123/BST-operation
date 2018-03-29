@@ -1,6 +1,9 @@
 Binary Search Tree Operations:-
 
 
+	Created a function getroot() to get the root value
+
+
 1)  Create a Binary Search Tree 
 
 
@@ -14,8 +17,10 @@ Binary Search Tree Operations:-
 
 
 5)  Two nodes of a BST are swapped, correct the BST:
-		
-		
-		First a simple tree is created using makeTree() function and then swapNode() function is called from 
-		the makeTree function to convert a simple tree to BST
+
+
+6)  Find the largest BST subtree in a given Binary Tree
+
+
+7)  Merge Two Balanced Binary Search Trees
 	

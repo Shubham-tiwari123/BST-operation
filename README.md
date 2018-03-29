@@ -16,5 +16,6 @@ Binary Search Tree Operations:-
 5)  Two nodes of a BST are swapped, correct the BST:
 		
 		
-		First a simple tree is created using makeTree() function and then swapNode() function is called from the makeTree function to convert a simple tree to BST
+		First a simple tree is created using makeTree() function and then swapNode() function is called from 
+		the makeTree function to convert a simple tree to BST
 	

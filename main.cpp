@@ -20,15 +20,18 @@ int main() {
     /*Converting general tree to BST*/
     b.swapNode(b.getroots());
     b.printInorder(b.getroots());
-    
     b1.createBST();
     b1.printInorder(b.getroot());
     /*Merging two BST*/
     cout<<"\nAfter merging tree:";
     b3.mergeTwoBST(b,b1);
-    b3.printInorder(b.getroot());*/
+    b3.printInorder(b.getroot());
     /*Finding the largest subtree of BST*/
     b.largestBSTSubtree(b.getroot()->left,0);
     b.largestBSTSubtree(b.getroot()->right,1);
+    /*Inorder Successor in Binary Search Tree*/
+    b.inorderSuccessor(b.getroot(),b.getroot()->left->right->right);
+    /*Sorted order printing of a given array that represents a BST*/
+    b.sortedOrderOfArrayBST();
     return 0;
 }

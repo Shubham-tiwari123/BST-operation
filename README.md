@@ -23,4 +23,10 @@ Binary Search Tree Operations:-
 
 
 7)  Merge Two Balanced Binary Search Trees
+
+
+8)  Sorted order printing of a given array that represents a BST
+
+
+9)  Inorder Successor in Binary Search Tree
 	

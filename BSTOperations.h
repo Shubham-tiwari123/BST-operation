@@ -12,7 +12,7 @@ private:
     int num,info,k1,k2;
     int temp1,flag1,flag2;
     int flag3;
-    
+    int arr[5] = {4, 2, 5, 1, 3};
 public:
     void createBST();
     void addNode(int data);
@@ -23,6 +23,10 @@ public:
     void swapNode(struct node* roots);
     void mergeTwoBST(BSTOperations b1,BSTOperations b2);
     void largestBSTSubtree(struct node *temp1,int x);
+    void inorderSuccessor(struct node *temp1,struct node *temp2);
+    void sortedOrderOfArrayBST();
+    void sortArray(int arr[],int x,int y);
+    
     struct node *getroot(){
         return root;
     }

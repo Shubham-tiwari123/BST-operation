@@ -296,3 +296,45 @@ void BSTOperations::largestBSTSubtree(struct node *temp1,int x) {
     }
 }
 
+void BSTOperations::inorderSuccessor(node* temp1, node* temp2) {
+    if(temp2->right!=NULL){
+        node *current = temp2->right;
+        while (current->left != NULL) {
+            current = current->left;
+        }
+        cout<<"\nSuccessor:-"<<current->data;
+    }
+    else{
+        node *succ = NULL;
+ 
+        while (temp1 != NULL){
+            if (temp2->data < temp1->data)
+            {
+                succ = temp1;
+                temp1 = temp1->left;
+            }
+            else if (temp2->data > temp1->data)
+                temp1 = temp1->right;
+            else
+               break;
+        }
+        cout<<"\nSuccessor:-"<<succ->data;
+    }
+}
+
+void BSTOperations::sortedOrderOfArrayBST() {
+    cout<<"\nGiven an array the represents BST:-";
+    for(int i=0;i<5;i++){
+        cout<<arr[i];
+    }
+    cout<<"\nSorting the array:-";
+    sortArray(arr,0,4);
+}
+
+void BSTOperations::sortArray(int arr[], int x, int y) {
+    if(x > y)
+        return;
+    sortArray(arr, x*2 + 1, y);
+    cout<<arr[x];
+    sortArray(arr, x*2 + 2, y);  
+}
